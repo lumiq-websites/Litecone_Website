@@ -1036,10 +1036,12 @@ html{scrollbar-gutter:stable}
           headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
           body: JSON.stringify(data)
         }).then(function(r){
-          if(!r.ok) throw new Error('send failed');
-          btn.disabled = false; btn.innerHTML = orig;
-          form.style.display = 'none';
-          if(done) done.classList.add('show');
+          return r.json().catch(function(){ return {}; }).then(function(j){
+            if(!r.ok || String(j.success) === 'false') throw new Error('send failed');
+            btn.disabled = false; btn.innerHTML = orig;
+            form.style.display = 'none';
+            if(done) done.classList.add('show');
+          });
         }).catch(function(){
           btn.disabled = false; btn.innerHTML = orig;
           if(sendErr) sendErr.style.display = 'block';
