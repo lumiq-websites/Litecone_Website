@@ -1216,6 +1216,13 @@ html{scrollbar-gutter:stable}
       });
     });
 
+    /* deep links from other pages: /#open-briefing etc. */
+    var hm = location.hash.match(/^#open-(briefing|demo|contact)$/);
+    if(hm){
+      openModal('m-' + hm[1], null);
+      try{ history.replaceState(null, '', location.pathname + location.search); }catch(_){}
+    }
+
     document.querySelectorAll('.ov').forEach(function(ov){
       ov.querySelectorAll('[data-close]').forEach(function(b){ b.addEventListener('click', function(){ closeModal(ov); }); });
       ov.addEventListener('click', function(e){ if(e.target === ov) closeModal(ov); });   /* click backdrop */

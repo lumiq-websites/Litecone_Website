@@ -196,11 +196,20 @@ section{position:relative}
 .cta .dek{margin:24px auto 0;max-width:52ch;font-size:17px;color:var(--ink-2);line-height:1.5;position:relative}
 .cta-row{margin-top:40px;display:flex;flex-wrap:wrap;justify-content:center;gap:14px;position:relative}
 
-/* footer */
-footer{border-top:1px solid var(--line);padding:32px 0;background:var(--bg-1)}
-.foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--ink-3)}
-footer a{transition:color .2s var(--e)}
-@media (hover:hover) and (pointer:fine){footer a:hover{color:var(--accent-ink)}}
+/* ============ FOOTER ============ */
+footer{border-top:1px solid var(--line);padding:56px 0 40px;background:var(--bg-1)}
+.foot-big{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;padding-bottom:56px;border-bottom:1px solid var(--line);align-items:end}
+.foot-word{font-family:'Fraunces';font-weight:300;font-size:clamp(44px,7vw,104px);line-height:.9;letter-spacing:-.025em;color:var(--ink)}
+.foot-word em{font-style:italic;color:var(--accent)}
+.foot-word .sub{display:block;margin-top:24px;font-family:'Inter';font-size:15px;font-weight:400;letter-spacing:0;color:var(--ink-2);max-width:42ch;line-height:1.55}
+.foot-cols{display:flex;gap:56px;justify-content:flex-end}
+.foot-col h4{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-bottom:16px;font-weight:500}
+.foot-col a{display:block;font-size:14px;color:var(--ink);padding:6px 0;transition:color .2s var(--e)}
+@media (hover:hover) and (pointer:fine){.foot-col a:hover{color:var(--accent-ink)}}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:28px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--ink-3)}
+.to-top{display:inline-flex;align-items:center;gap:8px;color:var(--ink-2);transition:color .2s var(--e)}
+@media (hover:hover) and (pointer:fine){.to-top:hover{color:var(--ink)}}
+@media (max-width:920px){.foot-big{grid-template-columns:1fr;gap:40px;align-items:start}.foot-cols{justify-content:flex-start;flex-wrap:wrap;gap:40px}}
 
 @media (max-width:920px){
   .links{display:none}
@@ -230,6 +239,7 @@ footer a{transition:color .2s var(--e)}
 </head>
 <body>
 
+<a id="top"></a>
 <a class="skip" href="#main">Skip to content</a>
 
 <header>
@@ -445,9 +455,35 @@ footer a{transition:color .2s var(--e)}
 </main>
 
 <footer>
-  <div class="wrap foot">
-    <span>© 2026 LiteCone.ai · Auto-decisioning for FSI</span>
-    <a href="./">Back to home ↑</a>
+  <div class="wrap">
+    <div class="foot-big">
+      <div class="foot-word rise">
+        Compliant, <em>by design.</em>
+        <span class="sub">Autonomous decisioning for Financial Services &amp; Insurance. Deployed in your own cloud, with an audit trail your regulator can read.</span>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Platform</h4>
+          <a href="./#proof">Proof</a>
+          <a href="./#agents">Agentic AI Co-workers</a>
+          <a href="./#zerotouch">Zero-Touch</a>
+          <a href="./#how">How it works</a>
+          <a href="./#governance">Governance</a>
+        </div>
+        <div class="foot-col">
+          <h4>Engage</h4>
+          <a href="./#open-briefing">Book a briefing ↗</a>
+          <a href="./#open-demo">Request a demo ↗</a>
+          <a href="./#open-contact">Contact us ↗</a>
+          <a href="mailto:hello@litecone.ai">hello@litecone.ai</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 LiteCone.ai · Auto-decisioning for FSI</span>
+      <span>Privacy · Terms · Compliance</span>
+      <a class="to-top" href="#top">Back to top ↑</a>
+    </div>
   </div>
 </footer>
 
