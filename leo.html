@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LEO — AI Life Insurance Underwriter · LiteCone.ai</title>
-<meta name="description" content="Meet LEO, LiteCone's AI life insurance underwriting agent — autonomous underwriting decisions against your manual in ~8 minutes, 75–80% zero-touch, with a full audit trail.">
+<meta name="description" content="LEO turns life insurance underwriting into an autonomous workflow — auto-deciding impairments, loadings, and large-sum cases against your manual, with a full line-by-line audit trail.">
 <meta property="og:title" content="LEO — AI Life Insurance Underwriter · LiteCone.ai">
-<meta property="og:description" content="Autonomous life underwriting against your manual — ~8 min turnaround, 75–80% zero-touch, fully auditable.">
+<meta property="og:description" content="Turn life insurance underwriting into an autonomous workflow. Certainty in minutes, not months — fully cited, compliant by design.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lumiqmarketingteam.github.io/Lumiq_Team_Marketing/leo.html">
 <meta property="og:site_name" content="LiteCone.ai">
 <meta property="og:image" content="https://lumiqmarketingteam.github.io/Lumiq_Team_Marketing/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="LEO — AI Life Insurance Underwriter · LiteCone.ai">
-<meta name="twitter:description" content="Autonomous life underwriting against your manual — ~8 min turnaround, 75–80% zero-touch, fully auditable.">
+<meta name="twitter:description" content="Turn life insurance underwriting into an autonomous workflow. Certainty in minutes, not months — fully cited, compliant by design.">
 <meta name="twitter:image" content="https://lumiqmarketingteam.github.io/Lumiq_Team_Marketing/assets/og-image.png">
 <link rel="canonical" href="https://lumiqmarketingteam.github.io/Lumiq_Team_Marketing/leo.html">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -25,44 +25,56 @@
 <style>
 :root{
   color-scheme:dark;
-  --ink:#F5F5F2;--ink-2:#B2B2AE;--ink-3:#82827E;--accent-ink:#F36B1D;
+  --ink:#F5F5F2;--ink-2:#B2B2AE;--ink-3:#82827E;--ink-4:#3A3A38;
+  --accent-ink:#F36B1D;
   --bg:#0A0A0A;--bg-1:#0E0E0E;--bg-2:#141414;
   --line:rgba(245,245,242,.08);--line-2:rgba(245,245,242,.14);
   --accent:#F36B1D;--accent-hi:#FF8438;--accent-glow:rgba(243,107,29,.35);
-  --header-bg:rgba(10,10,10,.72);--tint:rgba(255,255,255,.02);--logo-invert:0;
-  --e:cubic-bezier(.16,1,.3,1);--maxw:980px;--edge:clamp(24px,5vw,64px);
+  --header-bg:rgba(10,10,10,.72);--tint:rgba(255,255,255,.02);
+  --e:cubic-bezier(.16,1,.3,1);--maxw:1180px;--edge:clamp(24px,5vw,64px);
 }
 @media (prefers-color-scheme: light){
   :root:not([data-theme="dark"]){
     color-scheme:light;
-    --ink:#0F0F0E;--ink-2:#4A4A48;--ink-3:#666662;--accent-ink:#BC4708;
+    --ink:#0F0F0E;--ink-2:#4A4A48;--ink-3:#666662;--ink-4:#C8C8C4;
+    --accent-ink:#BC4708;
     --bg:#FAFAF7;--bg-1:#F2F2ED;--bg-2:#EAEAE3;
     --line:rgba(15,15,14,.10);--line-2:rgba(15,15,14,.18);
     --accent:#E45A0B;--accent-hi:#F36B1D;--accent-glow:rgba(228,90,11,.22);
-    --header-bg:rgba(250,250,247,.75);--tint:rgba(15,15,14,.025);--logo-invert:1;
+    --header-bg:rgba(250,250,247,.75);--tint:rgba(15,15,14,.025);
   }
 }
 :root[data-theme="light"]{
-    color-scheme:light;
-    --ink:#0F0F0E;--ink-2:#4A4A48;--ink-3:#666662;--accent-ink:#BC4708;
-    --bg:#FAFAF7;--bg-1:#F2F2ED;--bg-2:#EAEAE3;
-    --line:rgba(15,15,14,.10);--line-2:rgba(15,15,14,.18);
-    --accent:#E45A0B;--accent-hi:#F36B1D;--accent-glow:rgba(228,90,11,.22);
-    --header-bg:rgba(250,250,247,.75);--tint:rgba(15,15,14,.025);--logo-invert:1;
+  color-scheme:light;
+  --ink:#0F0F0E;--ink-2:#4A4A48;--ink-3:#666662;--ink-4:#C8C8C4;
+  --accent-ink:#BC4708;
+  --bg:#FAFAF7;--bg-1:#F2F2ED;--bg-2:#EAEAE3;
+  --line:rgba(15,15,14,.10);--line-2:rgba(15,15,14,.18);
+  --accent:#E45A0B;--accent-hi:#F36B1D;--accent-glow:rgba(228,90,11,.22);
+  --header-bg:rgba(250,250,247,.75);--tint:rgba(15,15,14,.025);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 ::selection{background:var(--accent);color:#100600}
 img{max-width:100%;display:block}
+button{font:inherit;background:none;border:0;color:inherit;cursor:pointer}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:400;letter-spacing:-.02em;line-height:1.02}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--edge)}
 .meta{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3)}
+.skip{position:fixed;left:16px;top:-72px;z-index:300;background:var(--accent);color:#100600;padding:12px 18px;border-radius:8px;font-weight:600;font-size:14px;transition:top .2s var(--e)}
+.skip:focus{top:16px;outline:2px solid var(--ink);outline-offset:2px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
+/* header */
 header{position:fixed;inset:0 0 auto 0;z-index:80;background:var(--header-bg);backdrop-filter:blur(18px) saturate(1.2);border-bottom:1px solid var(--line)}
 .nav{max-width:1440px;margin:0 auto;padding:16px var(--edge);display:flex;align-items:center;justify-content:space-between;gap:24px}
 .back{display:inline-flex;align-items:center;gap:9px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);transition:color .2s var(--e)}
 @media (hover:hover) and (pointer:fine){.back:hover{color:var(--accent-ink)}}
+.nav-right{display:flex;align-items:center;gap:10px}
+.theme-toggle{flex:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--ink-2);transition:color .2s var(--e),border-color .2s var(--e)}
+@media (hover:hover) and (pointer:fine){.theme-toggle:hover{color:var(--ink);border-color:var(--ink-3)}}
 .btn{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:500;padding:12px 20px;border-radius:8px;border:1px solid transparent;line-height:1;transition:transform .2s var(--e),background .2s var(--e),border-color .2s var(--e),color .2s var(--e)}
 .btn .ar{display:inline-block;transition:transform .25s var(--e)}
 .btn-primary{background:var(--accent);color:#100600;box-shadow:0 8px 30px -12px var(--accent-glow)}
@@ -74,56 +86,112 @@ header{position:fixed;inset:0 0 auto 0;z-index:80;background:var(--header-bg);ba
   .btn:hover .ar{transform:translate(3px,-3px)}
 }
 
-.hero{padding:clamp(130px,18vh,190px) 0 clamp(48px,7vh,80px)}
-.eyebrow{display:flex;align-items:center;gap:14px}
+/* reveal */
+.rise{opacity:0;transform:translateY(24px);transition:opacity .8s var(--e),transform .8s var(--e)}
+.rise.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rise{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* section shell (mirrors homepage) */
+section{position:relative}
+.sec{padding:clamp(80px,11vh,140px) 0}
+.sec-head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;padding-bottom:16px;margin-bottom:48px;border-bottom:1px solid var(--line)}
+.sec-head .num{color:var(--accent-ink)}
+.lead h2{font-size:clamp(28px,4.2vw,50px);color:var(--ink);max-width:24ch}
+.lead h2 em{font-style:italic;color:var(--accent)}
+.lead p.dek{margin-top:18px;font-size:clamp(16px,1.4vw,19px);color:var(--ink-2);max-width:56ch;line-height:1.55}
+.lead p.dek b{color:var(--ink);font-weight:600}
+
+/* hero */
+.hero{padding:clamp(130px,17vh,190px) 0 clamp(56px,8vh,96px);position:relative;overflow:hidden}
+.hero-glow{position:absolute;pointer-events:none;top:-300px;left:62%;width:1000px;height:1000px;border-radius:50%;background:radial-gradient(circle,rgba(243,107,29,.11),transparent 62%);filter:blur(8px)}
+.eyebrow{display:flex;align-items:center;gap:14px;position:relative}
 .eyebrow .rule{flex:0 0 clamp(48px,8vw,110px);height:1px;background:linear-gradient(90deg,var(--accent),transparent)}
-.eyebrow .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;color:var(--accent-ink);text-transform:uppercase}
-.profile{margin-top:clamp(32px,5vw,48px);display:flex;align-items:center;gap:clamp(20px,3.5vw,36px);flex-wrap:wrap}
-.face{width:clamp(96px,12vw,128px);height:clamp(96px,12vw,128px);border-radius:50%;object-fit:cover;border:1px solid var(--line-2);box-shadow:0 24px 60px -24px rgba(0,0,0,.5)}
-.p-name{font-family:'Inter';font-weight:800;font-size:clamp(44px,8vw,84px);line-height:.95;letter-spacing:-.02em;text-transform:uppercase}
-.p-role{margin-top:10px;font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(19px,2.4vw,26px);color:var(--ink-2)}
-.p-tag{margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+.eyebrow .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;color:var(--accent-ink);text-transform:uppercase}
+.eyebrow .place{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase}
+.hero h1{margin-top:clamp(30px,4.5vw,48px);font-size:clamp(38px,6.4vw,84px);max-width:16ch;position:relative}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.profile{margin-top:clamp(32px,5vw,48px);display:flex;align-items:center;gap:18px;position:relative}
+.face{width:64px;height:64px;border-radius:50%;object-fit:cover}
+.p-name{font-family:'Inter';font-weight:800;font-size:20px;letter-spacing:-.01em;text-transform:uppercase;line-height:1.1}
+.p-role{margin-top:3px;font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:16px;color:var(--ink-2)}
+.hero-cta{display:flex;gap:14px;margin-top:clamp(32px,4.5vw,44px);flex-wrap:wrap;position:relative}
 
-.body{padding:0 0 clamp(56px,8vh,96px)}
-.lede{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(21px,2.6vw,30px);line-height:1.32;color:var(--ink);max-width:34ch;letter-spacing:-.01em}
-.lede em{font-style:italic;color:var(--accent)}
-.facts{margin-top:clamp(36px,6vw,56px);display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
-.fact{padding:26px 22px 28px;border-bottom:1px solid var(--line)}
-.fact:not(:last-child){border-right:1px solid var(--line)}
-.fact .v{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,4vw,44px);line-height:1;letter-spacing:-.02em}
-.fact .v .u{color:var(--accent);font-size:.7em}
-.fact .l{margin-top:12px;font-size:13.5px;color:var(--ink-2);line-height:1.5}
-.does{margin-top:clamp(36px,6vw,56px);display:grid;gap:0;border-top:1px solid var(--line)}
-.do-row{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.do-row .n{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent-ink);letter-spacing:.1em}
-.do-row .t{font-size:16px;color:var(--ink-2);line-height:1.55;max-width:62ch}
-.do-row .t b{color:var(--ink);font-weight:600}
+/* proof cards */
+.cards2{margin-top:52px;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.card{padding:32px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:12px;position:relative;transition:background .25s var(--e)}
+.card::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--e)}
+@media (hover:hover) and (pointer:fine){.card:hover{background:var(--tint)}.card:hover::before{transform:scaleX(1)}}
+.card .stat{font-family:'Fraunces';font-weight:300;font-size:clamp(26px,2.8vw,34px);color:var(--accent-ink);line-height:1;letter-spacing:-.02em}
+.card .t{font-size:15px;font-weight:600;color:var(--ink)}
+.card .b{font-size:14px;color:var(--ink-2);line-height:1.55}
 
-.build{margin-top:clamp(40px,7vw,64px);border:1px solid var(--line);border-radius:16px;padding:clamp(28px,4.5vw,44px);background:linear-gradient(180deg,var(--tint),transparent);position:relative;overflow:hidden}
-.build::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--accent),transparent)}
-.build .bt{display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-ink)}
-.build .bt .pip{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent-glow)}
-.build h2{margin-top:16px;font-family:'Fraunces',serif;font-weight:300;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.015em;line-height:1.15}
-.build p{margin-top:12px;font-size:15.5px;color:var(--ink-2);max-width:56ch;line-height:1.55}
-.build .row{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+/* zero-touch aside */
+.zt-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.zt-grid p{margin-top:16px;font-size:17px;color:var(--ink-2);line-height:1.6;max-width:52ch}
+.zt-aside{border-left:1px solid var(--line);padding-left:32px}
+.zt-aside p{margin:0;font-family:'Fraunces';font-style:italic;font-weight:300;font-size:clamp(22px,2.4vw,32px);color:var(--ink);line-height:1.25;letter-spacing:-.015em;max-width:22ch}
+.zt-aside em{font-style:italic;color:var(--accent)}
 
+/* steps */
+.steps3{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.step{padding:30px 26px 26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;position:relative;transition:background .25s var(--e)}
+.step::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--e)}
+@media (hover:hover) and (pointer:fine){.step:hover{background:var(--tint)}.step:hover::before{transform:scaleX(1)}}
+.step .sn{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:var(--accent-ink);text-transform:uppercase}
+.step .st{margin-top:14px;font-family:'Fraunces';font-weight:300;font-size:22px;color:var(--ink);letter-spacing:-.01em;line-height:1.15}
+.step .sb{margin-top:8px;font-size:13.5px;color:var(--ink-2);line-height:1.5}
+.step ul{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);list-style:none;display:flex;flex-direction:column;gap:9px}
+.step li{position:relative;padding-left:16px;font-size:13.5px;color:var(--ink-2);line-height:1.45}
+.step li::before{content:"";position:absolute;left:0;top:.52em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.step-note{margin-top:44px;border:1px solid var(--line);border-radius:14px;padding:clamp(24px,3.5vw,36px);background:linear-gradient(180deg,var(--tint),transparent);position:relative;overflow:hidden}
+.step-note::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--accent),transparent)}
+.step-note p{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(19px,2.1vw,26px);line-height:1.35;color:var(--ink);max-width:44ch;letter-spacing:-.01em}
+.step-note em{font-style:italic;color:var(--accent)}
+
+/* compliance band */
+.comply{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-1)}
+.comply .inner{padding:clamp(64px,9vh,110px) 0}
+.comply p.big{margin-top:18px;font-size:17px;color:var(--ink-2);line-height:1.6;max-width:62ch}
+.comply p.big b{color:var(--ink);font-weight:600}
+
+/* cta */
+.cta{padding:clamp(100px,15vh,180px) 0;text-align:center;position:relative;overflow:hidden}
+.cta-glow{position:absolute;left:50%;top:60%;width:900px;height:900px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(243,107,29,.12),transparent 62%);pointer-events:none}
+.cta .eyebrow-c{display:inline-flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;color:var(--ink-3);text-transform:uppercase}
+.cta .eyebrow-c::before,.cta .eyebrow-c::after{content:"";width:36px;height:1px;background:var(--line-2)}
+.cta h2{margin-top:22px;font-size:clamp(34px,5.6vw,72px);color:var(--ink);letter-spacing:-.03em;line-height:1;text-wrap:balance;position:relative}
+.cta h2 em{font-style:italic;font-weight:300;color:var(--accent)}
+.cta .dek{margin:24px auto 0;max-width:52ch;font-size:17px;color:var(--ink-2);line-height:1.5;position:relative}
+.cta-row{margin-top:40px;display:flex;flex-wrap:wrap;justify-content:center;gap:14px;position:relative}
+
+/* footer */
 footer{border-top:1px solid var(--line);padding:32px 0;background:var(--bg-1)}
 .foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--ink-3)}
-@media (max-width:640px){.facts{grid-template-columns:1fr}.fact:not(:last-child){border-right:none}}
-.skip{position:fixed;left:16px;top:-72px;z-index:300;background:var(--accent);color:#100600;padding:12px 18px;border-radius:8px;font-weight:600;font-size:14px;transition:top .2s var(--e)}
-.skip:focus{top:16px;outline:2px solid var(--ink);outline-offset:2px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.nav-right{display:flex;align-items:center;gap:10px}
-.theme-toggle{flex:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--line-2);background:none;color:var(--ink-2);display:grid;place-items:center;cursor:pointer;font:inherit;transition:color .2s var(--e),border-color .2s var(--e)}
-@media (hover:hover) and (pointer:fine){.theme-toggle:hover{color:var(--ink);border-color:var(--ink-3)}}
+footer a{transition:color .2s var(--e)}
+@media (hover:hover) and (pointer:fine){footer a:hover{color:var(--accent-ink)}}
+
+@media (max-width:920px){
+  .cards2{grid-template-columns:1fr}
+  .steps3{grid-template-columns:1fr}
+  .zt-grid{grid-template-columns:1fr;gap:36px}
+  .zt-aside{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:28px}
+  .sec-head{grid-template-columns:auto 1fr}
+  .sec-head .end{grid-column:1/-1;text-align:left;margin-top:4px}
+  .eyebrow .place{display:none}
+}
+@media (max-width:560px){
+  .btn{padding:14px 18px;justify-content:center;flex:1 1 auto}
+  .hero-cta,.cta-row{flex-direction:column;align-items:stretch}
+}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"LEO — AI Life Insurance Underwriter","url":"https://lumiqmarketingteam.github.io/Lumiq_Team_Marketing/leo.html","description":"LEO is LiteCone's AI life insurance underwriting agent — autonomous decisions against your manual with a full audit trail.","isPartOf":{"@type":"WebSite","name":"LiteCone.ai","url":"https://lumiqmarketingteam.github.io/Lumiq_Team_Marketing/"}}
+{"@context":"https://schema.org","@type":"WebPage","name":"LEO — AI Life Insurance Underwriter","url":"https://lumiqmarketingteam.github.io/Lumiq_Team_Marketing/leo.html","description":"LEO turns life insurance underwriting into an autonomous workflow — auto-deciding complex life applications against your manual with a full audit trail.","isPartOf":{"@type":"WebSite","name":"LiteCone.ai","url":"https://lumiqmarketingteam.github.io/Lumiq_Team_Marketing/"}}
 </script>
 </head>
 <body>
 
 <a class="skip" href="#main">Skip to content</a>
+
 <header>
   <div class="nav">
     <a class="back" href="./">&larr; LiteCone.ai</a>
@@ -136,45 +204,170 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 <main id="main">
 
+<!-- ============ HERO ============ -->
 <section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="eyebrow"><span class="rule"></span><span class="tag">Agentic AI Co-worker profile</span></div>
-    <div class="profile">
-      <img class="face" src="assets/agents/LEO.png" alt="LEO headshot" width="100" height="100">
+    <div class="eyebrow rise">
+      <span class="rule"></span>
+      <span class="tag">For FSI · Auto-Decisioning with LEO</span>
+      <span class="place">Insurance · Live in production</span>
+    </div>
+    <h1 class="rise">Turn life insurance underwriting into an <em>autonomous workflow</em>.</h1>
+    <div class="profile rise">
+      <img class="face" src="assets/agents/LEO.png" alt="" width="100" height="100">
       <div>
-        <h1 class="p-name">LEO</h1>
-        <div class="p-role">Life Insurance Underwriter</div>
-        <div class="p-tag">Insurance · Live in production</div>
+        <div class="p-name">LEO</div>
+        <div class="p-role">Life Insurance Underwriter · LiteCone Agentic AI workforce</div>
+      </div>
+    </div>
+    <div class="hero-cta rise">
+      <a href="./#briefing" class="btn btn-primary">Book a briefing <span class="ar">↗</span></a>
+      <a href="#journey" class="btn btn-ghost">See how LEO decides <span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 PROMISE ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <span class="meta num">01</span>
+      <span class="meta">Fulfil a promise</span>
+      <span class="meta end">Certainty in minutes, not months</span>
+    </div>
+    <div class="lead rise">
+      <h2>Life insurance is a promise. LEO keeps it <em>on time</em>.</h2>
+      <p class="dek">Life insurance is a promise of security when a family needs it most. Yet legacy queues force families to wait weeks for a decision.</p>
+      <p class="dek">LEO bridges that gap by bringing Auto-Decisioning directly to your life insurance workflow. Operating with absolute consistency and unmatched precision, LEO processes complex life applications autonomously — <b>clearing backlogs and delivering certainty in minutes, not months.</b></p>
+    </div>
+    <div class="cards2">
+      <div class="card rise"><div class="stat">1+ year</div><div class="t">In live production</div><div class="b">Proven to handle real-life portfolios without missing a beat.</div></div>
+      <div class="card rise"><div class="stat">Regulated</div><div class="t">Fully regulated compliance</div><div class="b">Built-in safeguards that respect both the human element and strict global guidelines.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 ZERO-TOUCH ============ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <span class="meta num">02</span>
+      <span class="meta">Zero-Touch underwriting</span>
+      <span class="meta end">Industry first</span>
+    </div>
+    <div class="zt-grid">
+      <div class="rise">
+        <h2 style="font-size:clamp(28px,4.2vw,50px);letter-spacing:-.02em;line-height:1.05;max-width:22ch">A different speed for a sensitive industry.</h2>
+        <p>When volumes spike, decision fatigue leads to costly delays. LEO auto-decides the cases that used to wait for a senior — impairments, loadings, large-sum financial underwriting.</p>
+      </div>
+      <div class="zt-aside rise"><p>The cases that used to wait for a senior — <em>decided in minutes</em>.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 CO-WORKER ============ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <span class="meta num">03</span>
+      <span class="meta">Like a co-worker</span>
+      <span class="meta end">Giving back your life — and your client's</span>
+    </div>
+    <div class="lead rise">
+      <h2>A tireless underwriting <em>co-worker</em>, not a black box.</h2>
+      <p class="dek">As a critical part of the LiteCone workforce, LEO is an agentic AI built specifically to handle the deep intricacies of life insurance underwriting. Working alongside your human team, LEO acts as a tireless life-underwriter co-worker — freeing your senior specialists to focus on the highly complex, sensitive, and non-standard cases that truly require a human touch.</p>
+    </div>
+    <div class="cards2">
+      <div class="card rise"><div class="stat">Grounded</div><div class="t">Manual-grounded logic</div><div class="b">LEO reads your exact underwriting manual and applies it flawlessly.</div></div>
+      <div class="card rise"><div class="stat">Together</div><div class="t">A growing workforce</div><div class="b">Integrates perfectly with intake specialists like AURA to keep your workflow fluid.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 INTAKE TO AUTO-DECISION ============ -->
+<section id="journey" class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <span class="meta num">04</span>
+      <span class="meta">Intake to auto-decision</span>
+      <span class="meta end">Three-step deep dive</span>
+    </div>
+    <div class="lead rise">
+      <h2>From raw data to a fully cited, <em>empathetic</em> decision.</h2>
+      <p class="dek">LEO takes life applications from raw intake through a comprehensive three-step architectural deep dive.</p>
+    </div>
+    <div class="steps3">
+      <div class="step rise">
+        <span class="sn">Step 01 · Intake &amp; Submission</span>
+        <div class="st">Intelligent document handling</div>
+        <p class="sb">Case arrives in native form. No re-keying, no rip-and-replace.</p>
+        <ul>
+          <li>Document and quality assessment</li>
+          <li>Data extraction and classification</li>
+          <li>Document tagging and corrections</li>
+          <li>Data validation and verification</li>
+          <li>Pending requirement handling</li>
+        </ul>
+      </div>
+      <div class="step rise">
+        <span class="sn">Step 02 · Verification</span>
+        <div class="st">External and internal integration</div>
+        <p class="sb">Every fact is grounded against your manual and third-party data sources.</p>
+        <ul>
+          <li>KYC services</li>
+          <li>Credit bureau checks</li>
+          <li>Third-party sources</li>
+          <li>Negative news search</li>
+          <li>Workflow and journey integration</li>
+        </ul>
+      </div>
+      <div class="step rise">
+        <span class="sn">Step 03 · Underwriting</span>
+        <div class="st">Auto-Decisioning engine</div>
+        <p class="sb">Decision made. Cited. Logged. Fully replayable.</p>
+        <ul>
+          <li>Risk assessment and correlation</li>
+          <li>Financial, medical and lifestyle risk</li>
+          <li>Document fraud detection</li>
+          <li>Reinsurer calculator</li>
+          <li>Referral handling</li>
+        </ul>
+      </div>
+    </div>
+    <div class="step-note rise">
+      <p>You get an unshakeable auto-decision with a complete, line-by-line audit trail. You just need to go through it — <em>and focus on building the client's trust</em>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 COMPLIANT ============ -->
+<section class="comply">
+  <div class="wrap">
+    <div class="inner">
+      <div class="sec-head rise">
+        <span class="meta num">05</span>
+        <span class="meta">Compliant by design</span>
+        <span class="meta end">Auditable for peace of mind</span>
+      </div>
+      <div class="lead rise">
+        <h2>No black boxes. <em>Ever.</em></h2>
+        <p class="big">Because life insurance decisions have massive, long-term impacts on real human families, LEO&rsquo;s audit trail is built directly into every single action. Every decision LEO makes is <b>completely transparent, traceable, and defensible</b> — to your internal board, your risk-management team, and strict industry regulators.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="body">
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="cta-glow" aria-hidden="true"></div>
   <div class="wrap">
-    <p class="lede">LEO underwrites life cases end to end — autonomously, against your manual, <em>with an audit trail your regulator can read</em>.</p>
-
-    <div class="facts">
-      <div class="fact"><div class="v">~8<span class="u"> min</span></div><div class="l">Underwriting turnaround time</div></div>
-      <div class="fact"><div class="v">75–80<span class="u">%</span></div><div class="l">Cases cleared with zero underwriter touch</div></div>
-      <div class="fact"><div class="v">24<span class="u">×</span>7</div><div class="l">Decisions made — incl. weekends &amp; holidays</div></div>
-    </div>
-
-    <div class="does">
-      <div class="do-row"><span class="n">01</span><p class="t"><b>Reads the file.</b> Applications, medicals, financials — parsed in their native form, no re-keying.</p></div>
-      <div class="do-row"><span class="n">02</span><p class="t"><b>Grounds every fact</b> against your underwriting manual and your data. No fabrication, no drift.</p></div>
-      <div class="do-row"><span class="n">03</span><p class="t"><b>Decides</b> the way your best underwriter would, every time — and cites the manual, line by line.</p></div>
-      <div class="do-row"><span class="n">04</span><p class="t"><b>Leaves a trail.</b> Every decision cited, explainable, logged, and fully replayable.</p></div>
-    </div>
-
-    <div class="build">
-      <span class="bt"><span class="pip"></span>Full profile in build</span>
-      <h2>LEO&rsquo;s full profile page is on its way.</h2>
-      <p>In the meantime, the fastest way to know LEO is to watch him decide a live case — your process, your manual, in your own cloud.</p>
-      <div class="row">
-        <a href="./#briefing" class="btn btn-primary">Book a briefing <span class="ar">↗</span></a>
-        <a href="./#agents" class="btn btn-ghost">Meet the other Agentic AI co-workers <span class="ar">→</span></a>
-      </div>
+    <div class="eyebrow-c rise">If your manual is defined</div>
+    <h2 class="rise">LEO can <em>auto-decide</em> it.</h2>
+    <p class="dek rise">Book a 45-minute briefing. We&rsquo;ll show you exactly what Zero-Touch life underwriting looks like on your manual, in your own cloud.</p>
+    <div class="cta-row rise">
+      <a href="./#briefing" class="btn btn-primary">Book a briefing <span class="ar">↗</span></a>
+      <a href="./#agents" class="btn btn-ghost">Meet the other Agentic AI co-workers <span class="ar">→</span></a>
     </div>
   </div>
 </section>
@@ -190,19 +383,34 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 <script>
 (function(){
-  var btn = document.getElementById('themeToggle'); if(!btn) return;
-  var root = document.documentElement;
-  var SUN = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
-  var MOON = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>';
-  function current(){ var t = root.getAttribute('data-theme'); if(t) return t; return matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'; }
-  function paint(){ var t = current(); btn.innerHTML = t === 'dark' ? SUN : MOON; btn.setAttribute('aria-label', t === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'); }
-  btn.addEventListener('click', function(){
-    var next = current() === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    try{ localStorage.setItem('lc-theme', next); }catch(e){}
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* rise reveals */
+  if(!reduce){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:0.14, rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.rise').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.rise').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* theme toggle */
+  var btn = document.getElementById('themeToggle');
+  if(btn){
+    var root = document.documentElement;
+    var SUN = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+    var MOON = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>';
+    var current = function(){ var t = root.getAttribute('data-theme'); if(t) return t; return matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'; };
+    var paint = function(){ var t = current(); btn.innerHTML = t === 'dark' ? SUN : MOON; btn.setAttribute('aria-label', t === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'); };
+    btn.addEventListener('click', function(){
+      var next = current() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try{ localStorage.setItem('lc-theme', next); }catch(e){}
+      paint();
+    });
     paint();
-  });
-  paint();
+  }
 })();
 </script>
 </body>
